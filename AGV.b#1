@@ -36,24 +36,24 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -80,11 +80,12 @@
 <wire x1="80.724371875" y1="75.889875" x2="0.11948125" y2="76.2708" width="0" layer="20"/>
 <wire x1="0.11948125" y1="76.2708" x2="0.02184375" y2="0.020575" width="0" layer="20"/>
 <hole x="19.892771875" y="3.393159375" drill="1"/>
-<hole x="19.892771875" y="3.393159375" drill="1"/>
+<hole x="19.892771875" y="3.393159375" drill="3.048"/>
 <hole x="61.81206875" y="3.437053125" drill="1"/>
-<hole x="61.81206875" y="3.437053125" drill="1"/>
-<hole x="20.12835625" y="23.471071875" drill="1"/>
-<hole x="70.345071875" y="39.53631875" drill="1"/>
+<hole x="61.81206875" y="3.437053125" drill="3.048"/>
+<hole x="23.458475" y="23.403103125" drill="3.048"/>
+<hole x="72.763915625" y="39.819475" drill="3.048"/>
+<hole x="20.408190625" y="72.032065625" drill="3.048"/>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -973,7 +974,7 @@ design rules under a new name.</description>
 <element name="U$4" library="DIY Modules" package="ULTRASONIC-HC-SR04#V" value="ULTRASONIC-HC-SR04#V" x="75.1339375" y="57.153403125" rot="R90"/>
 <element name="U$5" library="MyLibrary" package="INFRARED-SENSOR" value="INFRARED-SENSOR" x="36.66225625" y="70.09608125" rot="R180"/>
 <element name="U$6" library="MyLibrary" package="INFRARED-SENSOR" value="INFRARED-SENSOR" x="49.9426" y="70.128465625"/>
-<element name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="0.728090625" y="-7.4032125"/>
+<element name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X02" package3d_urn="urn:adsk.eagle:package:22435/2" value="" x="39.472846875" y="5.68931875"/>
 </elements>
 <signals>
 <signal name="3V">
@@ -1019,8 +1020,7 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="1"/>
 <contactref element="JP2" pad="2"/>
 <contactref element="U$4" pad="1"/>
-<wire x1="37.512015625" y1="6.7936125" x2="38.73136875" y2="8.012965625" width="0.8128" layer="16"/>
-<wire x1="75.7594125" y1="27.612290625" x2="76.910209375" y2="28.7630875" width="0.8128" layer="16"/>
+<wire x1="76.910209375" y1="28.7630875" x2="75.7594125" y2="27.612290625" width="0.8128" layer="16"/>
 <wire x1="76.910209375" y1="51.56713125" x2="75.1339375" y2="53.343403125" width="0.8128" layer="16"/>
 <wire x1="76.910209375" y1="28.7630875" x2="76.910209375" y2="51.56713125" width="0.8128" layer="16"/>
 <wire x1="75.1339375" y1="53.343403125" x2="76.32024375" y2="53.343403125" width="0.8128" layer="16"/>
@@ -1030,13 +1030,13 @@ design rules under a new name.</description>
 <wire x1="76.32024375" y1="53.343403125" x2="78.040840625" y2="55.064" width="0.8128" layer="16"/>
 <wire x1="75.1386125" y1="68.997271875" x2="75.1386125" y2="71.537271875" width="0.8128" layer="16"/>
 <wire x1="5.862559375" y1="11.330046875" x2="10.39899375" y2="6.7936125" width="0.8128" layer="16"/>
-<wire x1="10.39899375" y1="6.7936125" x2="37.512015625" y2="6.7936125" width="0.8128" layer="16"/>
-<wire x1="38.73136875" y1="22.382709375" x2="43.96095" y2="27.612290625" width="0.8128" layer="16"/>
-<wire x1="43.96095" y1="27.612290625" x2="54.08968125" y2="27.612290625" width="0.8128" layer="16"/>
-<wire x1="54.08968125" y1="27.612290625" x2="75.7594125" y2="27.612290625" width="0.8128" layer="16"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="38.73136875" y1="8.012965625" x2="38.73136875" y2="22.382709375" width="0" layer="19" extent="16-16"/>
-<wire x1="-0.541909375" y1="-7.4032125" x2="10.39899375" y2="6.7936125" width="0" layer="19" extent="16-16"/>
+<wire x1="10.39899375" y1="6.7936125" x2="37.098553125" y2="6.7936125" width="0.8128" layer="16"/>
+<wire x1="37.098553125" y1="6.7936125" x2="38.202846875" y2="5.68931875" width="0.8128" layer="16"/>
+<wire x1="10.69996875" y1="16.16745625" x2="5.862559375" y2="11.330046875" width="0.8128" layer="16"/>
+<wire x1="35.692209375" y1="27.612290625" x2="24.247375" y2="16.16745625" width="0.8128" layer="16"/>
+<wire x1="24.247375" y1="16.16745625" x2="10.69996875" y2="16.16745625" width="0.8128" layer="16"/>
+<wire x1="75.7594125" y1="27.612290625" x2="35.692209375" y2="27.612290625" width="0.8128" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="U$2" pad="OUT-"/>
@@ -1063,8 +1063,9 @@ design rules under a new name.</description>
 <vertex x="-0.741934375" y="77.401853125"/>
 <vertex x="-0.560578125" y="77.401853125"/>
 </polygon>
-<wire x1="37.93225625" y1="70.09608125" x2="48.6726" y2="70.128465625" width="0" layer="19" extent="1-1"/>
+<wire x1="48.6726" y1="70.128465625" x2="37.93225625" y2="70.09608125" width="0" layer="19" extent="1-1"/>
 <wire x1="66.67136875" y1="46.04328125" x2="48.89136875" y2="46.04328125" width="0" layer="19" extent="1-1"/>
+<wire x1="66.67136875" y1="18.10328125" x2="66.67136875" y2="46.04328125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$5" pad="1"/>
@@ -1138,7 +1139,9 @@ design rules under a new name.</description>
 <signal name="N$9">
 <contactref element="JP4" pad="2"/>
 <contactref element="U$1" pad="3"/>
-<wire x1="1.998090625" y1="-7.4032125" x2="38.73136875" y2="18.10328125" width="0" layer="19" extent="1-1"/>
+<wire x1="40.742846875" y1="5.68931875" x2="40.742846875" y2="12.0310375" width="0.8128" layer="16"/>
+<wire x1="38.73136875" y1="14.042515625" x2="38.73136875" y2="18.10328125" width="0.8128" layer="16"/>
+<wire x1="40.742846875" y1="12.0310375" x2="38.73136875" y2="14.042515625" width="0.8128" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
